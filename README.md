@@ -8,6 +8,8 @@ Data source: A real world dataset
 
 The publication: *A metagenomics workflow for SARS-CoV-2 identification, co-pathogen detection, and overall diversity* [[1]]
 
+Installation:
+snakemake, fastqc, flash2, kraken2, bracken,multiqc, R
 
 
 To run the pipeline:
