@@ -9,8 +9,15 @@ Data source: A real world dataset
 The publication: *A metagenomics workflow for SARS-CoV-2 identification, co-pathogen detection, and overall diversity* [[1]]
 
 Installation:
-snakemake, fastqc, flash2, kraken2, bracken,multiqc, R
+sra-tools, snakemake, fastqc, flash2, kraken2, bracken,multiqc, R
 
+To download fastq files from the NCBI SRA or EBI ENA archive's websites using the run identifiders(accession numbers)
+```
+module load sra-tools
+srun --cpus-per-task=8 --time=00:30:00 xargs -a zliu_run_accessions.txt fastq-dump --readids --gzip \
+--outdir ../data/sra_fastq/ --disable-multithreading --split-e  
+
+```
 
 To run the pipeline:
 
