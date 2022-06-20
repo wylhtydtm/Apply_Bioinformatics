@@ -17,7 +17,7 @@ sample_annot <- dbGetQuery(mydb, "select * from sample_annot;")
 input_files <- lapply(snakemake@input, function(x) {
     accession <- str_extract(x, "ERR\\d+")
     infile <- read.delim(x, sep = "\t")
-    outfile <- infile %>% mutate(run_accession = accession) %>% relocate(run_accession)
+    outfile <- infile %>% mutate(run_accession = accession)# %>% relocate(run_accession)
     return(outfile)
 })
 
@@ -60,5 +60,5 @@ abun_wide %>% head(100) %>% column_to_rownames(var='taxon_name') %>% replace(is.
   
 ##alternatively
 
-library('pheatmap')
+library(pheatmap)
 
