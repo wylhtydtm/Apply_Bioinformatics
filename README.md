@@ -14,3 +14,5 @@ The publication: *A metagenomics workflow for SARS-CoV-2 identification, co-path
 
 [1]: https://www.sciencedirect.com/science/article/pii/S1386653221002924
 
+
+Course organisers: Pascal and Samuel 
