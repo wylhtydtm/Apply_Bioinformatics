@@ -1,0 +1,5 @@
+clusters: "sbatch --time={resources.time_min} --mem={resources.mem_mb} -c {resources.cpus} -o outputs/{rule}_{wildcards}.out -e outputs/{rule}_{wildcards}.err"
+jobs: 8
+default-resources: [cpus=2, mem_mb=60000, time_min=20]
+#resources: [cpus=200, mem_mb=250000]
+latency-wait: 15
