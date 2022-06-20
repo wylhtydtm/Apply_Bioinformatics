@@ -11,7 +11,7 @@ The publication: *A metagenomics workflow for SARS-CoV-2 identification, co-path
 
 
 To run the pipeline:
-'''
+```
 module load snakemake 
 snakemake --snakefile Snakefile --cluster-config config.yaml --jobs 2
 '''
